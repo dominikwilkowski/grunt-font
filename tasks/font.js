@@ -37,7 +37,7 @@ module.exports = function(grunt) {
 		});
 
 
-		var $font = grunt.file.readJSON('./tasks/fonts/' + OPTIONS.font + '.json');
+		var $font = grunt.file.readJSON(__dirname + '/fonts/' + OPTIONS.font + '.json');
 		var $input = this.data.text;
 		var $output = [];
 		for(var i = 0, length = $font.lines; i < length; i++) { //create first lines
