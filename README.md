@@ -95,6 +95,7 @@ grunt.initConfig({
 - ;
 - ` ` (space)
 
+_The `|` character will be replaced with a line break_
 
 ### Options
 
@@ -148,6 +149,13 @@ Default value: `true`
 Set this option to false if you don't want the plugin to insert two empty line on top and on the bottom of the output.
 
 
+#### options.letterSpacing
+Type: `Integer`  
+Default value: `1`
+
+Set this option to widen the space between characters.
+
+
 #### options.maxLength
 Type: `Integer`  
 Default value: `10`
@@ -168,6 +176,7 @@ font: {
 			font: 'block', //define the font face
 			colors: [], //define all colors
 			background: 'Black', //define the background color
+			letterSpacing:  1, //define letter spacing
 			space: true, //define if the output text should have empty lines on top and on the bottom
 			maxLength: 10
 		},
@@ -196,6 +205,8 @@ In lieu of a formal styleguide, take care to maintain the existing coding style.
 Lint and test your code using [Grunt](http://gruntjs.com/).
 
 ## Release History
+* 0.0.4 - fixed block font parameters
+* 0.0.3 - added letter spacing option
 * 0.0.2 - path fixes
 * 0.0.1 - alpha test
 
