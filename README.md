@@ -95,6 +95,7 @@ grunt.initConfig({
 - ;
 - ` ` (space)
 
+_The `|` character will be replaced with a line break_
 
 ### Options
 
@@ -204,6 +205,7 @@ In lieu of a formal styleguide, take care to maintain the existing coding style.
 Lint and test your code using [Grunt](http://gruntjs.com/).
 
 ## Release History
+* 0.0.4 - fixed block font parameters
 * 0.0.3 - added letter spacing option
 * 0.0.2 - path fixes
 * 0.0.1 - alpha test
