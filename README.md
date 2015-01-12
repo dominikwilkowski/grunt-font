@@ -1,7 +1,7 @@
 grunt-font
 ==========
 
-> Add soothing sound notification to your grunt watch so you don't need to watch the watch.
+> Output in a nice font to the console for banners or logos using [cfonts](https://nodei.co/npm/cfonts/)
 
 [![NPM](https://nodei.co/npm/grunt-font.png)](https://nodei.co/npm/grunt-font/)
 
@@ -146,7 +146,7 @@ In this setting you can set the background colors for the output. Use the color 
 Type: `Boolen`  
 Default value: `true`
 
-Set this option to false if you don't want the plugin to insert two empty line on top and on the bottom of the output.
+Set this option to false if you don't want the plugin to insert two empty lines on top and on the bottom of the output.
 
 
 #### options.letterSpacing
@@ -205,6 +205,7 @@ In lieu of a formal styleguide, take care to maintain the existing coding style.
 Lint and test your code using [Grunt](http://gruntjs.com/).
 
 ## Release History
+* 0.0.5 - separated into two node modules
 * 0.0.4 - fixed block font parameters
 * 0.0.3 - added letter spacing option
 * 0.0.2 - path fixes
