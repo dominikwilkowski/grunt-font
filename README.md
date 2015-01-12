@@ -3,7 +3,7 @@ grunt-font
 
 > Output in a nice font to the console for banners or logos using [cfonts](https://nodei.co/npm/cfonts/)
 
-[![NPM](https://nodei.co/npm/grunt-font.png)](https://nodei.co/npm/grunt-font/)
+[![NPM](https://nodei.co/npm/grunt-font.png?downloads=true)](https://nodei.co/npm/grunt-font/)
 
 ## Getting Started
 This plugin requires Grunt `~0.4.5`
@@ -106,7 +106,8 @@ Default value: `block`
 
 This is the font face you want to use. So far this plugin ships with with following font faces:
 
-* block [colors: 2]
+* `block`  [colors: 2]
+* `simple` [colors: 1]
 
 
 #### options.colors
