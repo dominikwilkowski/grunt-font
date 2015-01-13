@@ -1,5 +1,17 @@
-grunt-font
-==========
+```shell
+		   ██████╗  ██████╗  ██╗   ██╗ ███╗   ██╗ ████████╗
+		  ██╔════╝  ██╔══██╗ ██║   ██║ ████╗  ██║ ╚══██╔══╝
+		  ██║  ███╗ ██████╔╝ ██║   ██║ ██╔██╗ ██║    ██║
+		  ██║   ██║ ██╔══██╗ ██║   ██║ ██║╚██╗██║    ██║
+		  ╚██████╔╝ ██║  ██║ ╚██████╔╝ ██║ ╚████║    ██║
+		   ╚═════╝  ╚═╝  ╚═╝  ╚═════╝  ╚═╝  ╚═══╝    ╚═╝
+		      ███████╗  ██████╗  ███╗   ██╗ ████████╗
+		      ██╔════╝ ██╔═══██╗ ████╗  ██║ ╚══██╔══╝
+		      █████╗   ██║   ██║ ██╔██╗ ██║    ██║
+		      ██╔══╝   ██║   ██║ ██║╚██╗██║    ██║
+		      ██║      ╚██████╔╝ ██║ ╚████║    ██║
+		      ╚═╝       ╚═════╝  ╚═╝  ╚═══╝    ╚═╝
+```
 
 > Output in a nice font to the console for banners or logos using [cfonts](https://nodei.co/npm/cfonts/)
 
@@ -108,6 +120,7 @@ This is the font face you want to use. So far this plugin ships with with follow
 
 * `block`  [colors: 2]
 * `simple` [colors: 1]
+* `3d`     [colors: 2]
 
 
 #### options.colors
@@ -206,6 +219,7 @@ In lieu of a formal styleguide, take care to maintain the existing coding style.
 Lint and test your code using [Grunt](http://gruntjs.com/).
 
 ## Release History
+* 0.0.6 - updated docs
 * 0.0.5 - separated into two node modules
 * 0.0.4 - fixed block font parameters
 * 0.0.3 - added letter spacing option
