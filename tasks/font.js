@@ -41,15 +41,15 @@ module.exports = function(grunt) {
 		var $input = this.data.text;
 
 
-		var fonts = new FONTS(
-			$input,
-			OPTIONS.font,
-			OPTIONS.colors,
-			OPTIONS.background,
-			OPTIONS.letterSpacing,
-			OPTIONS.space,
-			OPTIONS.maxLength
-		);
+		var fonts = new FONTS({
+			'text': $input,
+			'font': OPTIONS.font,
+			'colors': OPTIONS.colors,
+			'background': OPTIONS.background,
+			'letterSpacing': OPTIONS.letterSpacing,
+			'space': OPTIONS.space,
+			'maxLength': OPTIONS.maxLength
+		});
 	});
 
 };

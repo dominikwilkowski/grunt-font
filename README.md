@@ -219,6 +219,7 @@ In lieu of a formal styleguide, take care to maintain the existing coding style.
 Lint and test your code using [Grunt](http://gruntjs.com/).
 
 ## Release History
+* 0.0.7 - updated cfonts settings
 * 0.0.6 - updated docs
 * 0.0.5 - separated into two node modules
 * 0.0.4 - fixed block font parameters
