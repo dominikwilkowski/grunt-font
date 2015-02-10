@@ -37,7 +37,7 @@
 		"grunt": "~0.4.5"
 	},
 	"dependencies": {
-		"cfonts": "^0.0.7",
+		"cfonts": "^0.0.10",
 		"change-case": "^2.1.6",
 		"chalk": "^0.5.1"
 	},

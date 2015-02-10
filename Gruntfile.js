@@ -40,13 +40,23 @@ module.exports = function(grunt) {
 				text: 'a b c defghijklmnopqrstuvwxyz|0123456789|!?.+-_=@#$%&()/:;ü',
 			},
 
+			//deviate from defaults
 			custom: {
-				options: { //deviate from defaults
+				options: {
 					font: 'simple',
 					colors: ['black', 'blue'],
 					background: 'cyan',
 					maxLength: 15,
-					space: false
+					space: false,
+				},
+				text: 'a b c defghijklmnopqrstuvwxyz|0123456789|!?.+-_=@#$%&()/:;ü',
+			},
+
+			custom2: {
+				options: {
+					font: 'console',
+					colors: ['blue'],
+					background: 'white',
 				},
 				text: 'a b c defghijklmnopqrstuvwxyz|0123456789|!?.+-_=@#$%&()/:;ü',
 			},
