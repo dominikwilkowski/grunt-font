@@ -229,4 +229,4 @@ Lint and test your code using [Grunt](http://gruntjs.com/).
 * 0.0.1 - alpha test
 
 ## License
-Copyright (c) 2014 Dominik Wilkowski. Licensed under the [MIT license](https://github.com/dominikwilkowski/grunt-font/blob/master/LICENSE-MIT).
+Copyright (c) 2014 Dominik Wilkowski. Licensed under the [GNU GPL](https://github.com/dominikwilkowski/grunt-font/blob/master/LICENSE-MIT).
