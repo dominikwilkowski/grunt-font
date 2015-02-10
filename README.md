@@ -118,9 +118,10 @@ Default value: `block`
 
 This is the font face you want to use. So far this plugin ships with with following font faces:
 
-* `block`  [colors: 2]
-* `simple` [colors: 1]
-* `3d`     [colors: 2]
+* `console` [colors: 1]
+* `block`   [colors: 2]
+* `simple`  [colors: 1]
+* `3d`      [colors: 2]
 
 
 #### options.colors
@@ -219,6 +220,7 @@ In lieu of a formal styleguide, take care to maintain the existing coding style.
 Lint and test your code using [Grunt](http://gruntjs.com/).
 
 ## Release History
+* 0.0.7 - updated to cfonts 0.0.10
 * 0.0.6 - updated docs
 * 0.0.5 - separated into two node modules
 * 0.0.4 - fixed block font parameters
