@@ -60,6 +60,14 @@ module.exports = function(grunt) {
 				},
 				text: 'a b c defghijklmnopqrstuvwxyz|0123456789|!?.+-_=@#$%&()/:;ü',
 			},
+
+			custom3: {
+				options: {
+					font: 'simple3d',
+					colors: ['yellow'],
+				},
+				text: 'a b c defghijklmnopqrstuvwxyz|0123456789|!?.+-_=@#$%&()/:;ü',
+			},
 		},
 
 
