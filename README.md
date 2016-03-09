@@ -221,15 +221,16 @@ In lieu of a formal styleguide, take care to maintain the existing coding style.
 Lint and test your code using [Grunt](http://gruntjs.com/).
 
 ## Release History
-* 0.0.9 - updated to cfonts 0.0.13
-* 0.0.8 - updated to cfonts 0.0.10
-* 0.0.7 - fixed settings object
-* 0.0.6 - updated docs
-* 0.0.5 - separated into two node modules
-* 0.0.4 - fixed block font parameters
-* 0.0.3 - added letter spacing option
-* 0.0.2 - path fixes
-* 0.0.1 - alpha test
+* 0.0.10 - Updated peerDependencies for grunt 1.0
+* 0.0.9  - updated to cfonts 0.0.13
+* 0.0.8  - updated to cfonts 0.0.10
+* 0.0.7  - fixed settings object
+* 0.0.6  - updated docs
+* 0.0.5  - separated into two node modules
+* 0.0.4  - fixed block font parameters
+* 0.0.3  - added letter spacing option
+* 0.0.2  - path fixes
+* 0.0.1  - alpha test
 
 ## License
 Copyright (c) 2014 Dominik Wilkowski. Licensed under the [GNU GPL](https://github.com/dominikwilkowski/grunt-font/blob/master/LICENSE).
