@@ -1,16 +1,16 @@
 ```shell
-				   ██████╗  ██████╗  ██╗   ██╗ ███╗   ██╗ ████████╗
-				  ██╔════╝  ██╔══██╗ ██║   ██║ ████╗  ██║ ╚══██╔══╝
-				  ██║  ███╗ ██████╔╝ ██║   ██║ ██╔██╗ ██║    ██║
-				  ██║   ██║ ██╔══██╗ ██║   ██║ ██║╚██╗██║    ██║
-				  ╚██████╔╝ ██║  ██║ ╚██████╔╝ ██║ ╚████║    ██║
-				   ╚═════╝  ╚═╝  ╚═╝  ╚═════╝  ╚═╝  ╚═══╝    ╚═╝
-				      ███████╗  ██████╗  ███╗   ██╗ ████████╗
-				      ██╔════╝ ██╔═══██╗ ████╗  ██║ ╚══██╔══╝
-				      █████╗   ██║   ██║ ██╔██╗ ██║    ██║
-				      ██╔══╝   ██║   ██║ ██║╚██╗██║    ██║
-				      ██║      ╚██████╔╝ ██║ ╚████║    ██║
-				      ╚═╝       ╚═════╝  ╚═╝  ╚═══╝    ╚═╝
+     ██████╗  ██████╗  ██╗   ██╗ ███╗   ██╗ ████████╗
+    ██╔════╝  ██╔══██╗ ██║   ██║ ████╗  ██║ ╚══██╔══╝
+    ██║  ███╗ ██████╔╝ ██║   ██║ ██╔██╗ ██║    ██║
+    ██║   ██║ ██╔══██╗ ██║   ██║ ██║╚██╗██║    ██║
+    ╚██████╔╝ ██║  ██║ ╚██████╔╝ ██║ ╚████║    ██║
+     ╚═════╝  ╚═╝  ╚═╝  ╚═════╝  ╚═╝  ╚═══╝    ╚═╝
+        ███████╗  ██████╗  ███╗   ██╗ ████████╗
+        ██╔════╝ ██╔═══██╗ ████╗  ██║ ╚══██╔══╝
+        █████╗   ██║   ██║ ██╔██╗ ██║    ██║
+        ██╔══╝   ██║   ██║ ██║╚██╗██║    ██║
+        ██║      ╚██████╔╝ ██║ ╚████║    ██║
+        ╚═╝       ╚═════╝  ╚═╝  ╚═══╝    ╚═╝
 ```
 
 > Output in a nice font to the console for banners or logos using [cfonts](https://nodei.co/npm/cfonts/)
@@ -18,7 +18,7 @@
 [![NPM](https://nodei.co/npm/grunt-font.png?downloads=true)](https://nodei.co/npm/grunt-font/)
 
 ## Getting Started
-This plugin requires Grunt `~0.4.5`
+This plugin requires Grunt `>=0.4.0`
 
 If you haven't used [Grunt](http://gruntjs.com/) before, be sure to check out the [Getting Started](http://gruntjs.com/getting-started) guide,
 as it explains how to create a [Gruntfile](http://gruntjs.com/sample-gruntfile) as well as install and use Grunt plugins.
@@ -118,11 +118,23 @@ Default value: `block`
 
 This is the font face you want to use. So far this plugin ships with with following font faces:
 
-* `console`  [colors: 1]
-* `block`    [colors: 2]
-* `simple`   [colors: 1]
-* `3d`       [colors: 2]
-* `simple3d` [colors: 1]
+* `console`     [colors: 1]
+* `block`       [colors: 2] _(default)_
+* `simpleBlock` [colors: 2]
+* `simple`      [colors: 1]
+* `3d`          [colors: 2]
+* `simple3d`    [colors: 1]
+
+
+#### options.align
+Type: `String`  
+Default value: `"left"`
+
+You can align your text in the terminal with this option. Use the keywords below:
+
+- `left` _(default)_
+- `center`
+- `right`
 
 
 #### options.colors
@@ -138,7 +150,7 @@ In this setting you can set the colors for each font face. Use the color strings
 - `blue`
 - `magenta`
 - `cyan`
-- `white`
+- `white` _(default)_
 - `gray`
 
 
@@ -148,7 +160,7 @@ Default value: `Black`
 
 In this setting you can set the background colors for the output. Use the color strings build in by [chalk](https://github.com/sindresorhus/chalk):
 
-- `Black`
+- `Black` _(default)_
 - `Red`
 - `Green`
 - `Yellow`
@@ -158,18 +170,25 @@ In this setting you can set the background colors for the output. Use the color 
 - `White`
 
 
-#### options.space
-Type: `Boolen`  
-Default value: `true`
-
-Set this option to false if you don't want the plugin to insert two empty lines on top and on the bottom of the output.
-
-
 #### options.letterSpacing
 Type: `Integer`  
 Default value: `1`
 
 Set this option to widen the space between characters.
+
+
+#### options.line-height
+Type: `Integer`  
+Default value: `1`
+
+Set this option to widen the space between lines.
+
+
+#### options.space
+Type: `Boolen`  
+Default value: `true`
+
+Set this option to false if you don't want the plugin to insert two empty lines on top and on the bottom of the output.
 
 
 #### options.maxLength
@@ -189,12 +208,14 @@ In this example, the default options are used which will print your text in bloc
 font: {
 	start: {
 		options: {
-			font: 'block', //define the font face
-			colors: [], //define all colors
+			font: 'block',       //define the font face
+			align: 'left',       //define text alignment
+			colors: ['white'],   //define all colors
 			background: 'Black', //define the background color
-			letterSpacing:  1, //define letter spacing
-			space: true, //define if the output text should have empty lines on top and on the bottom
-			maxLength: 10
+			letterSpacing: 1,    //define letter spacing
+			lineHeight: 1,       //define the line height
+			space: true,         //define if the output text should have empty lines on top and on the bottom
+			maxLength: 0         //define how many character can be on one line
 		},
 		text: "Welcome",
 	},
@@ -221,6 +242,7 @@ In lieu of a formal styleguide, take care to maintain the existing coding style.
 Lint and test your code using [Grunt](http://gruntjs.com/).
 
 ## Release History
+* 0.0.12 - updated to cfonts 1.0.0
 * 0.0.11 - Updated peerDependencies for grunt 1.0
 * 0.0.10 - Updated devDependencies for grunt 1.0
 * 0.0.9  - updated to cfonts 0.0.13
@@ -234,4 +256,4 @@ Lint and test your code using [Grunt](http://gruntjs.com/).
 * 0.0.1  - alpha test
 
 ## License
-Copyright (c) 2014 Dominik Wilkowski. Licensed under the [GNU GPL](https://github.com/dominikwilkowski/grunt-font/blob/master/LICENSE).
+Copyright (c) 2016 Dominik Wilkowski. Licensed under the [GNU GPLv2](https://github.com/dominikwilkowski/grunt-font/blob/master/LICENSE).
