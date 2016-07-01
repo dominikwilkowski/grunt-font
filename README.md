@@ -124,6 +124,7 @@ This is the font face you want to use. So far this plugin ships with with follow
 * `simple`      [colors: 1]
 * `3d`          [colors: 2]
 * `simple3d`    [colors: 1]
+* `chrome`      [colors: 3]
 
 
 #### options.align
@@ -242,6 +243,7 @@ In lieu of a formal styleguide, take care to maintain the existing coding style.
 Lint and test your code using [Grunt](http://gruntjs.com/).
 
 ## Release History
+* 0.0.13 - updated to cfonts 1.0.1
 * 0.0.12 - updated to cfonts 1.0.0
 * 0.0.11 - Updated peerDependencies for grunt 1.0
 * 0.0.10 - Updated devDependencies for grunt 1.0
