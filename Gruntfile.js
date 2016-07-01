@@ -77,6 +77,15 @@ module.exports = function(grunt) {
 				},
 				text: 'a b c defghijklmnopqrstuvwxyz|0123456789|!?.+-_=@#$%&()/:;ü',
 			},
+
+			custom5: {
+				options: {
+					font: 'chrome',
+					colors: ['green','gray'],
+					align: 'center',
+				},
+				text: 'a b c defghijklmnopqrstuvwxyz|0123456789|!?.+-_=@#$%&()/:;ü',
+			},
 		},
 
 
