@@ -1,7 +1,7 @@
 {
 	"name": "grunt-font",
 	"description": "Output in a nice font to the console",
-	"version": "0.0.13",
+	"version": "0.0.14",
 	"homepage": "https://github.com/dominikwilkowski/grunt-font",
 	"author": {
 		"name": "Dominik Wilkowski",
@@ -42,7 +42,7 @@
 		"grunt": ">=1.0.0"
 	},
 	"dependencies": {
-		"cfonts": "^1.0.1"
+		"cfonts": "^1.2.0"
 	},
 	"keywords": [
 		"gruntplugin",

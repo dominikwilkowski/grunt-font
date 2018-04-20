@@ -86,6 +86,16 @@ module.exports = function(grunt) {
 				},
 				text: 'a b c defghijklmnopqrstuvwxyz|0123456789|!?.+-_=@#$%&()/:;ü',
 			},
+
+			custom6: {
+				options: {
+					font: 'chrome',
+					colors: ['greenBright','gray','yellowBright'],
+					background: 'redBright',
+					align: 'center',
+				},
+				text: 'a b c defghijklmnopqrstuvwxyz|0123456789|!?.+-_=@#$%&()/:;ü',
+			},
 		},
 
 
