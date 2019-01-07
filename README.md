@@ -97,6 +97,7 @@ In lieu of a formal styleguide, take care to maintain the existing coding style.
 Lint and test your code using [Grunt](http://gruntjs.com/).
 
 ## Release History
+* 1.0.1  - updated to cfonts ^2.3.0 and removed lock file
 * 1.0.0  - updated to cfonts ^2.1.0
 * 0.0.14 - updated to cfonts 1.2.0
 * 0.0.13 - updated to cfonts 1.0.1
